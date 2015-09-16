@@ -1,11 +1,11 @@
 package com.example.courtcount;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
     TextView apple;
     TextView orange;
     int scorea = 0;
@@ -87,14 +87,14 @@ public void reset(View v)
         if ((scorea >= 30) || (scoreb >= 30)) {
 
             if (scorea > scoreb) {
-                disp.setText("Team a wins");
+                disp.setText("Team A wins");
             } else {
-                disp.setText("Team b wins");
+                disp.setText("Team B wins");
             }
         }
             else
             {
-                disp.setText("");
+                disp.setText("Score");
             }
         }
     }
